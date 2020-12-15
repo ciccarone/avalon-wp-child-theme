@@ -1,0 +1,165 @@
+/*
+ Theme Name:   Avalon Child Theme
+ Description:  Avalon Child Theme
+ Version:      2.2.6
+ Author:       Tony Ciccarone
+ Author URI:   https://tonyciccarone.com
+ Template:     fildisi
+*/
+
+// Vars:
+$c-purple: #776d87;
+
+// Helpers:
+
+.tight {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-the-difference {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.avalon-btn {
+  letter-spacing: 2px;
+}
+
+.full-white-link {
+
+  a {
+  display: block;
+  color: white;
+  padding: 100% 0;
+  width: 100%;
+  }
+  &__large {
+    a {
+      font-size: 2em;
+      padding: 50% 0;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1em;
+    }
+  }
+
+  &__hidden {
+    visibility: hidden;
+  }
+}
+
+.cta {
+  // margin-top: 64px;
+  &-text {
+    color: white;
+  }
+
+  .eut-row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#eut-main-content div.eut-main-content-wrapper.clearfix {
+  padding-bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.letter-spaced {
+  letter-spacing: 1px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.eut-footer-wrapper {
+  .eut-widget-title {
+    color: #3f3f3f !important;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+  }
+  .eut-social ul {
+    position: relative;
+    top: -10px;
+  }
+  .textwidget, .textwidget p, .textwidget a {
+    letter-spacing: 1px;
+    font-size: 1.05em;
+    .bold.caps {
+      font-size: 1.3em;
+      margin-top: 32px;
+      display: block;
+    }
+    color: #3f3f3f !important;
+  }
+}
+
+
+.hero {
+  h1.eut-title {
+    @media (min-width: 768px) {
+      font-size: 5em !important;
+    }
+  }
+  .eut-description {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+  }
+}
+
+
+.index-card {
+  .eut-column-wrapper-inner {
+    border: 1px solid #ccc;
+
+    &:hover {
+          color: white;
+      .index-card__header {
+        background-color: $c-purple;
+
+        &:before {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+
+
+    &:before {
+      margin-right: 16px;
+      font-weight: 900;
+      font-family: "Font Awesome 5 Pro";
+      content: "\f0d7";
+    }
+  }
+
+  &__links {
+    ul {
+      margin-top: 16px;
+      list-style: none;
+    }
+    li {
+      display: block;
+      padding: 7px 23px;
+    }
+    a {
+      &:hover {
+        color: black;
+        border-bottom: 2px solid $c-purple;
+      }
+    }
+  }
+
+}

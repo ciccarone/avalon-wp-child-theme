@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Avalon Child Theme
+ Description:  Avalon Child Theme
+ Version:      2.2.6
+ Author:       Tony Ciccarone
+ Author URI:   https://tonyciccarone.com
+ Template:     fildisi
+*/
+.tight {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-the-difference {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.avalon-btn {
+  letter-spacing: 2px;
+}
+
+.full-white-link a {
+  display: block;
+  color: white;
+  padding: 100% 0;
+  width: 100%;
+}
+.full-white-link__large a {
+  font-size: 2em;
+  padding: 50% 0;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1em;
+}
+.full-white-link__hidden {
+  visibility: hidden;
+}
+
+.cta-text {
+  color: white;
+}
+.cta .eut-row {
+  display: flex;
+  align-items: center;
+}
+
+#eut-main-content div.eut-main-content-wrapper.clearfix {
+  padding-bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.letter-spaced {
+  letter-spacing: 1px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.eut-footer-wrapper .eut-widget-title {
+  color: #3f3f3f !important;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+.eut-footer-wrapper .eut-social ul {
+  position: relative;
+  top: -10px;
+}
+.eut-footer-wrapper .textwidget, .eut-footer-wrapper .textwidget p, .eut-footer-wrapper .textwidget a {
+  letter-spacing: 1px;
+  font-size: 1.05em;
+  color: #3f3f3f !important;
+}
+.eut-footer-wrapper .textwidget .bold.caps, .eut-footer-wrapper .textwidget p .bold.caps, .eut-footer-wrapper .textwidget a .bold.caps {
+  font-size: 1.3em;
+  margin-top: 32px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero h1.eut-title {
+    font-size: 5em !important;
+  }
+}
+.hero .eut-description {
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
+.index-card .eut-column-wrapper-inner {
+  border: 1px solid #ccc;
+}
+.index-card .eut-column-wrapper-inner:hover {
+  color: white;
+}
+.index-card .eut-column-wrapper-inner:hover .index-card__header {
+  background-color: #776d87;
+}
+.index-card .eut-column-wrapper-inner:hover .index-card__header:before {
+  color: white;
+}
+.index-card__header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.index-card__header:before {
+  margin-right: 16px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  content: "";
+}
+.index-card__links ul {
+  margin-top: 16px;
+  list-style: none;
+}
+.index-card__links li {
+  display: block;
+  padding: 7px 23px;
+}
+.index-card__links a:hover {
+  color: black;
+  border-bottom: 2px solid #776d87;
+}
+
+/*# sourceMappingURL=style.css.map */
