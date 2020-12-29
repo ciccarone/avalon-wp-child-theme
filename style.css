@@ -48,6 +48,7 @@
 
 #eut-main-content div.eut-main-content-wrapper.clearfix {
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .bold {
@@ -84,7 +85,8 @@
 
 @media (min-width: 768px) {
   .hero h1.eut-title {
-    font-size: 5em !important;
+    font-size: 6em !important;
+    letter-spacing: 2px !important;
   }
 }
 .hero .eut-description {
@@ -127,6 +129,137 @@
 .index-card__links a:hover {
   color: black;
   border-bottom: 2px solid #776d87;
+}
+
+.content-block__title {
+  position: relative;
+  top: -10px;
+  margin-bottom: 0;
+}
+.content-block__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.content-block__image .eut-column-wrapper {
+  position: relative;
+}
+.content-block__image--logo {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  align-items: center;
+  height: 100%;
+}
+.content-block__image--logo:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.content-block__image--logo img {
+  width: 50%;
+}
+.content-block__image:hover .content-block__image--logo {
+  display: flex !important;
+}
+.content-block__text {
+  font-size: 0.9em;
+  line-height: 1.9em;
+}
+.content-block__buttons .avalon-btn:first-child {
+  float: left;
+}
+
+.other-concerns-treated__item {
+  margin-bottom: 32px;
+}
+.other-concerns-treated__item a {
+  color: white;
+  font-size: 2em;
+  display: block;
+  padding: 25%;
+  font-weight: 600;
+  line-height: 1.4em;
+  min-height: 260px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.eut-btn.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+.concerns-treated .eut-padding-bottom-1x.content-block {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.concerns-treated .eut-padding-bottom-1x .section {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.wpcf7-form p {
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: block;
+}
+
+#eut-feature-section .owl-controls, .eut-slider .owl-controls {
+  bottom: -9%;
+}
+
+.staff__item {
+  cursor: help;
+}
+.staff__item .eut-column-wrapper-inner {
+  position: relative;
+}
+.staff__item:hover .eut-image-wrapper:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.staff__item:hover .staff__text {
+  display: flex;
+}
+.staff__text {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  color: white;
+  padding: 16px;
+  overflow: scroll;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  height: 100%;
+}
+.staff__text strong {
+  font-size: 1.4em;
+  display: block;
+}
+.staff__text br {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

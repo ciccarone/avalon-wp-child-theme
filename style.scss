@@ -63,6 +63,7 @@ $c-purple: #776d87;
 
 #eut-main-content div.eut-main-content-wrapper.clearfix {
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .bold {
@@ -103,7 +104,8 @@ $c-purple: #776d87;
 .hero {
   h1.eut-title {
     @media (min-width: 768px) {
-      font-size: 5em !important;
+      font-size: 6em !important;
+      letter-spacing: 2px !important;
     }
   }
   .eut-description {
@@ -159,6 +161,177 @@ $c-purple: #776d87;
         color: black;
         border-bottom: 2px solid $c-purple;
       }
+    }
+  }
+
+}
+
+.content-block {
+  &__title {
+    position: relative;
+    top: -10px;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  &__image {
+    .eut-column-wrapper {
+      position: relative;
+    }
+
+    &--logo {
+      display: none;
+      &:before {
+        content: "";
+        background-color: rgba(255,255,255,.7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      position: absolute;
+      z-index: 3;
+      top: 0;
+
+      align-items: center;
+      height: 100%;
+      img {
+        width: 50%;
+      }
+    }
+    &:hover {
+      .content-block__image--logo {
+        display: flex !important;
+      }
+    }
+  }
+
+  &__text {
+    font-size: .9em;
+    line-height: 1.9em;
+  }
+
+  &__buttons {
+    .avalon-btn {
+      &:first-child {
+        float: left;
+      }
+    }
+  }
+}
+
+
+.other-concerns-treated {
+
+  &__item {
+
+    margin-bottom: 32px;
+    a {
+      color: white;
+      font-size: 2em;
+      display: block;
+      padding: 25%;
+      font-weight: 600;
+      line-height: 1.4em;
+      min-height: 260px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.eut-btn.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+.concerns-treated {
+  .eut-padding-bottom-1x.content-block {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .eut-padding-bottom-1x .section {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+}
+
+.wpcf7-form {
+  p {
+    font-weight: bold;
+    margin-bottom: 16px;
+    display: block;
+  }
+}
+
+
+#eut-feature-section .owl-controls, .eut-slider .owl-controls {
+  bottom: -9%;
+}
+
+
+.staff {
+
+  &__item {
+    cursor:help;
+    .eut-column-wrapper-inner {
+      position: relative;
+    }
+
+    &:hover {
+      .eut-image-wrapper {
+        &:after {
+          content: "";
+          background-color: rgba(0,0,0,.8);
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .staff__text {
+        display: flex;
+      }
+    }
+  }
+
+  &__text {
+    display: none;
+    position: absolute;
+    // display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    color: white;
+    padding: 16px;
+    overflow: scroll;
+    font-size: .9em;
+    line-height: 1.5em;
+    height: 100%;
+
+    strong {
+      font-size: 1.4em;
+      display: block;
+    }
+
+    br {
+      display: none;
     }
   }
 

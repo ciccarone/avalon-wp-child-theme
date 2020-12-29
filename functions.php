@@ -38,3 +38,29 @@ function custom_js() {
   echo '<script src="https://kit.fontawesome.com/cff905c27f.js" crossorigin="anonymous"></script>';
 }
 add_action( 'wp_head', 'custom_js' );
+
+
+function custom_enqueue() {
+    wp_enqueue_script(
+        'custom-script',
+        get_stylesheet_directory_uri() . '/script.js',
+        array( 'jquery' )
+    );
+    wp_enqueue_style(
+        'animate-css',
+        '/cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
+        
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'custom_enqueue' );
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+  global $post;
+  if ($page_type = get_field('page_type', $post->ID)) {
+    $classes[] = $page_type;
+  }
+  return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
