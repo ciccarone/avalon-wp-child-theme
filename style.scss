@@ -12,6 +12,11 @@ $c-purple: #776d87;
 
 // Helpers:
 
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.2s;
+}
+
 .tight {
   max-width: 800px;
   margin: 0 auto;
@@ -175,6 +180,7 @@ $c-purple: #776d87;
   &__subtitle {
     text-transform: uppercase;
     margin-bottom: 0;
+    letter-spacing: 1px;
   }
   &__image {
     .eut-column-wrapper {
@@ -335,4 +341,24 @@ $c-purple: #776d87;
     }
   }
 
+}
+
+.vc_custom_1607987548395, .vc_custom_1607987761703 {
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+#eut-header.eut-sticky-header #eut-main-header.eut-header-default, #eut-header.eut-sticky-header #eut-main-header .eut-header-elements {
+  background-color: rgba(255,255,254,.9);
+}
+
+#eut-header.eut-sticky-header .eut-logo-text a, #eut-header.eut-sticky-header #eut-main-header #eut-main-menu .eut-wrapper > ul > li > a, #eut-header.eut-sticky-header #eut-main-header .eut-header-element > a, #eut-header.eut-sticky-header .eut-header-element .eut-purchased-items {
+  color: black;
+}
+
+#eut-header.eut-sticky-header li:hover a {
+  color: black !important;
 }

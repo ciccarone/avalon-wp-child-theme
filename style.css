@@ -7,6 +7,11 @@
  Author URI:   https://tonyciccarone.com
  Template:     fildisi
 */
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.2s;
+}
+
 .tight {
   max-width: 800px;
   margin: 0 auto;
@@ -139,6 +144,7 @@
 .content-block__subtitle {
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 1px;
 }
 .content-block__image .eut-column-wrapper {
   position: relative;
@@ -260,6 +266,25 @@
 }
 .staff__text br {
   display: none;
+}
+
+.vc_custom_1607987548395, .vc_custom_1607987761703 {
+  opacity: 0;
+}
+.vc_custom_1607987548395.show, .vc_custom_1607987761703.show {
+  opacity: 1;
+}
+
+#eut-header.eut-sticky-header #eut-main-header.eut-header-default, #eut-header.eut-sticky-header #eut-main-header .eut-header-elements {
+  background-color: rgba(255, 255, 254, 0.9);
+}
+
+#eut-header.eut-sticky-header .eut-logo-text a, #eut-header.eut-sticky-header #eut-main-header #eut-main-menu .eut-wrapper > ul > li > a, #eut-header.eut-sticky-header #eut-main-header .eut-header-element > a, #eut-header.eut-sticky-header .eut-header-element .eut-purchased-items {
+  color: black;
+}
+
+#eut-header.eut-sticky-header li:hover a {
+  color: black !important;
 }
 
 /*# sourceMappingURL=style.css.map */

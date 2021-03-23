@@ -48,8 +48,8 @@ function custom_enqueue() {
     );
     wp_enqueue_style(
         'animate-css',
-        '/cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
-        
+        '//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
+
     );
 }
 
